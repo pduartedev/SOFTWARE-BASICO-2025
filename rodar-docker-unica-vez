@@ -1,0 +1,2 @@
+# Instalar uma imagem linux com binutils e gcc através do docker e Dokcerfile para rodar códigos em C e Assembly (única vez)
+docker build --platform linux/amd64 -t ambiente-assembly .

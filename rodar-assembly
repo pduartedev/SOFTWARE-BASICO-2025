@@ -1,0 +1,8 @@
+# Rodar o linux através do docker
+docker run --platform linux/amd64 --rm -it -v "$PWD":/workspace ambiente-assembly bash
+
+# Rodar um código C
+gcc exemplo.c -o exe; ./exe;
+
+# Rodar um código em assembly
+as exemplo.s -o object.o; ld object.o -o exe; ./exe; echo $? 
